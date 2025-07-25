@@ -6,23 +6,27 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:08:27 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/07/22 15:13:11 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/07/25 17:06:53 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./contact.hpp"
 
-void    Contact::SetName (std::string name, int type)
+void    Contact::setInfo (std::string info, int type)
 {
-    if (type == 0)
-        FirstName = name;
-    else if (type == 1)
-        LastName = name;
-    else
-        std::cout << "Wrong type selected\n";
+    if (type == F_Name)
+        _firstName = info;
+    else if (type == L_Name)
+        _lastName = info;
+    else if (type = N_name)
+        _nickname = info;
+    else if (type = P_Number)
+        _phoneNumber = info;
+    else if (type = D_Secret)
+        _darkestSecret = info;
 }
 
-std::string Contact::getFullName() const
-{
-    return (FirstName + " " + LastName);
-}
+// std::string Contact::getInfo() const
+// {
+//     return (FirstName + " " + LastName);
+// }

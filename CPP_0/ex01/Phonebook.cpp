@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 14:23:46 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/07/25 17:17:42 by lscheupl         ###   ########.fr       */
+/*   Created: 2025/07/25 16:07:32 by lscheupl          #+#    #+#             */
+/*   Updated: 2025/07/25 17:20:24 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Phonebook.hpp"
 
-int main()
+void PhoneBook::setLastInput(int input)
 {
-    PhoneBook theBook;
     
 }

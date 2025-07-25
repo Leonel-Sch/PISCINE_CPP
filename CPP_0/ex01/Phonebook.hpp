@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 14:23:46 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/07/25 17:17:42 by lscheupl         ###   ########.fr       */
+/*   Created: 2025/07/25 16:08:39 by lscheupl          #+#    #+#             */
+/*   Updated: 2025/07/25 17:19:51 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Phonebook.hpp"
+#include <iostream>
+#include <string>
+#include <contact.hpp>
 
-int main()
+class PhoneBook
 {
-    PhoneBook theBook;
-    
-}
+    private:
+    Contact book[8];
+    int lastInput;
+    public:
+    void setLastInput(int input);
+    void addContact();
+    void searchContact();
+    void exitBook();
+};
