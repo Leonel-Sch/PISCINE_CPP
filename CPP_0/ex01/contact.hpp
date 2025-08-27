@@ -6,7 +6,7 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:08:15 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/08/27 13:36:02 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:32:08 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ class Contact
     std::string _darkestSecret;
     public:
     void setInfo(std::string info, int type);
-    std::string getInfo() const;
+    std::string getInfo(int type);
 };
 

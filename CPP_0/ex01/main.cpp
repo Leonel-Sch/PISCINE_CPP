@@ -6,7 +6,7 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:23:46 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/08/27 18:53:50 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/08/27 19:47:17 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,12 @@ int main()
     std :: getline(std :: cin, input);
     if (input == "ADD")
     {
-        if (!(theBook.getLastInput() > 7))
-        {
-            theBook.setLastInput(-1);
-            theBook.addContact();
-        }
+        theBook.setLastInput(-1);
+        theBook.addContact();
     }
-    else if (input == "SEARCH")
-        std :: cout << "SEARCH COMMAND";
-    else if (input == "EXIT")
-        return (0);
+    if (input == "SEARCH")
+        theBook.searchContact();
+    if (input == "EXIT")
+        return 0;
     }
 }
