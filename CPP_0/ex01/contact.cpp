@@ -6,7 +6,7 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:08:27 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/07/25 17:06:53 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/08/27 14:32:15 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,10 @@ void    Contact::setInfo (std::string info, int type)
         _firstName = info;
     else if (type == L_Name)
         _lastName = info;
-    else if (type = N_name)
+    else if (type == N_name)
         _nickname = info;
-    else if (type = P_Number)
+    else if (type == P_Number)
         _phoneNumber = info;
-    else if (type = D_Secret)
+    else if (type == D_Secret)
         _darkestSecret = info;
 }
-
-// std::string Contact::getInfo() const
-// {
-//     return (FirstName + " " + LastName);
-// }

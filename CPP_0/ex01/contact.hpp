@@ -6,7 +6,7 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:08:15 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/07/25 16:04:11 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/08/27 13:36:02 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ typedef enum
     N_name,
     P_Number,
     D_Secret,
-};
+} InfoType;
 
 class Contact
 {
