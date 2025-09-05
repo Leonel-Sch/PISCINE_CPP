@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:08:15 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/08/27 19:32:08 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/09/05 22:28:49 by leonel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ typedef enum
 {
     F_Name,
     L_Name,
-    N_name,
+    N_Name,
     P_Number,
     D_Secret,
 } InfoType;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:08:27 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/08/27 19:46:06 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/09/05 22:28:59 by leonel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void    Contact::setInfo (std::string info, int type)
         _firstName = info;
     else if (type == L_Name)
         _lastName = info;
-    else if (type == N_name)
+    else if (type == N_Name)
         _nickname = info;
     else if (type == P_Number)
         _phoneNumber = info;
@@ -32,7 +32,7 @@ std :: string Contact::getInfo (int type)
         return (_firstName);
     else if (type == L_Name)
         return (_lastName);
-    else if (type == N_name)
+    else if (type == N_Name)
         return (_nickname);
     else if (type == P_Number)
         return (_phoneNumber);
