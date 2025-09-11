@@ -5,15 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/09/10 21:12:52 by leonel            #+#    #+#              #
-#    Updated: 2025/09/11 23:57:29 by lscheupl         ###   ########.fr        #
+#    Created: 2025/09/11 21:50:31 by lscheupl          #+#    #+#              #
+#    Updated: 2025/09/11 21:50:39 by lscheupl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= Attack
+NAME		= Sedlooser
 CXX		= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
-SRCS		= main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRCS		= main.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 all: $(NAME)

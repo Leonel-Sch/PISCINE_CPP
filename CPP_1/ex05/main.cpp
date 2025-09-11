@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/10 21:13:29 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/11 21:36:51 by lscheupl         ###   ########.fr       */
+/*   Created: 2025/09/11 23:43:52 by lscheupl          #+#    #+#             */
+/*   Updated: 2025/09/12 00:00:19 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include <string>
+#include "Harl.hpp"
+#include <unistd.h>
 
-class Weapon
+int main()
 {
-	private :
-	std :: string type;
-	public :
-	std :: string & getType();
-	void setType(std :: string type);
-	Weapon(std :: string str);
-};
+    Harl harl;
+    for (int i = 0; i < 20; i++)
+    {
+       usleep(100000);
+        harl.complain("DEBUG");
+       usleep(100000);
+      harl.complain("INFO");
+      usleep(100000);
+       harl.complain("WARNING");
+      usleep(100000);
+      harl.complain("ERROR");
+    }
+}

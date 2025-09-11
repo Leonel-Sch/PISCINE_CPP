@@ -6,7 +6,7 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 20:37:26 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/09/09 22:14:49 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/09/11 20:41:45 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,4 @@ int main()
     sizeHorde = 5;
     
     Leonel = zombieHorde( sizeHorde, "Leonel");
-    delete[] Leonel;
 }

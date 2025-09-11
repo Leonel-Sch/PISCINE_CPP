@@ -5,15 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/09/10 21:12:52 by leonel            #+#    #+#              #
-#    Updated: 2025/09/11 23:57:29 by lscheupl         ###   ########.fr        #
+#    Created: 2025/09/11 23:43:50 by lscheupl          #+#    #+#              #
+#    Updated: 2025/09/11 23:57:18 by lscheupl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= Attack
+NAME		= Harl
 CXX		= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
-SRCS		= main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRCS		= main.cpp Harl.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 all: $(NAME)

@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/10 21:13:29 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/11 21:36:51 by lscheupl         ###   ########.fr       */
+/*   Created: 2025/09/11 23:43:54 by lscheupl          #+#    #+#             */
+/*   Updated: 2025/09/11 23:52:20 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#include <iostream>
+#include <iomanip>
 #include <string>
 
-class Weapon
-{
-	private :
-	std :: string type;
-	public :
-	std :: string & getType();
-	void setType(std :: string type);
-	Weapon(std :: string str);
+class Harl {
+private:
+    void debug(void);
+    void info(void);
+    void warning(void);
+    void error(void);
+
+public:
+    void complain(std::string level);
 };
