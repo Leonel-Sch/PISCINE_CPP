@@ -6,9 +6,11 @@
 /*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 13:27:47 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/18 18:22:15 by leonel           ###   ########.fr       */
+/*   Updated: 2025/09/18 19:46:04 by leonel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #include <string>
 #include <iostream>
@@ -16,7 +18,7 @@
 
 class ClapTrap
 {
-private :
+protected :
 	std :: string 	_name;
 	int 			_hitPoints;
 	int				_energyPoints;
@@ -25,10 +27,10 @@ public :
 	ClapTrap();
 	ClapTrap(std :: string name);
 	ClapTrap(const ClapTrap &other);
-	~ClapTrap();
+	virtual ~ClapTrap();
 	ClapTrap &operator=(const ClapTrap &other);
 
-	void attack(const std :: string &target);
+	virtual void attack(const std :: string &target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 };

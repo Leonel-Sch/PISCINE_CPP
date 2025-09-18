@@ -6,7 +6,7 @@
 /*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 13:34:57 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/18 19:33:35 by leonel           ###   ########.fr       */
+/*   Updated: 2025/09/18 19:57:21 by leonel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ ClapTrap &ClapTrap :: operator=(const ClapTrap &other)
 	_hitPoints = other._hitPoints;
 	_energyPoints = other._energyPoints;
 	_attackDamage = other._attackDamage;
-	std :: cout << "Assignement Operator Called" << std :: endl;
+	std :: cout << "ClapTrap assignement Operator Called" << std :: endl;
 	return (*this);
 }
 
@@ -73,13 +73,13 @@ void ClapTrap :: takeDamage(unsigned int amount)
 {
 	if (_hitPoints <= 0)
 	{
-		std :: cout << "ClapTrap " << _name << " is already dead !";
+		std :: cout << _name << " is already dead !";
 		return;
 	}
 	if ((int)amount >= _hitPoints)
 	{
 		_hitPoints = 0;
-		std :: cout << "ClapTrap " << _name << " died !\n";
+		std :: cout << _name << " died !\n";
 		return;
 	}
 	else
@@ -87,23 +87,23 @@ void ClapTrap :: takeDamage(unsigned int amount)
 		_hitPoints -= amount;
 		if (_hitPoints < 0)
 			_hitPoints = 0;
-		std :: cout << "ClapTrap " << _name << " has " << _hitPoints << " pv left !\n";
+		std :: cout << _name << " has " << _hitPoints << " pv left !\n";
 	}
 }
 void ClapTrap :: beRepaired(unsigned int amount)
 {
 	if(_energyPoints <= 0)
 	{
-		std :: cout << "ClapTrap " << _name << " doesn't have any energy left \n";
+		std :: cout << _name << " doesn't have any energy left \n";
 		return;
 	}
 	else if (_hitPoints <= 0)
 	{
-		std :: cout << "ClapTrap " << _name << " is already dead !\n";
+		std :: cout << _name << " is already dead !\n";
 		return;
 	}
 	else
 		_energyPoints--;
 	_hitPoints += amount;
-	std :: cout << "ClapTrap " << _name << " repaired " << amount << " pv , he has " << _hitPoints<< " pv left now !\n";
+	std :: cout << _name << " repaired " << amount << " pv , he has " << _hitPoints<< " pv left now !\n";
 }

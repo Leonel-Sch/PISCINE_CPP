@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Claptrap.hpp                                       :+:      :+:    :+:   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 13:27:47 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/18 18:22:15 by leonel           ###   ########.fr       */
+/*   Created: 2025/09/18 21:10:12 by leonel            #+#    #+#             */
+/*   Updated: 2025/09/18 21:38:47 by leonel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
+#include <string.h>
 #include <iomanip>
+#include <iostream>
 
-class ClapTrap
+class Animal
 {
-private :
-	std :: string 	_name;
-	int 			_hitPoints;
-	int				_energyPoints;
-	int 			_attackDamage;
+protected :
+    std :: string _type;
 public :
-	ClapTrap();
-	ClapTrap(std :: string name);
-	ClapTrap(const ClapTrap &other);
-	~ClapTrap();
-	ClapTrap &operator=(const ClapTrap &other);
-
-	void attack(const std :: string &target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+    Animal();
+    Animal(std :: string type);
+    Animal(Animal &other);
+    Animal &operator=(const Animal &other);
+    ~Animal();
+    void makeSound();
 };

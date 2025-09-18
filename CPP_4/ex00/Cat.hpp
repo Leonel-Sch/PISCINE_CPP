@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Claptrap.hpp                                       :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 13:27:47 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/18 18:22:15 by leonel           ###   ########.fr       */
+/*   Created: 2025/09/18 21:09:28 by leonel            #+#    #+#             */
+/*   Updated: 2025/09/18 21:15:48 by leonel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
+#pragma once
+
+#include <string.h>
 #include <iomanip>
+#include <iostream>
+#include "Animal.hpp"
 
-class ClapTrap
+class Cat : public Animal
 {
-private :
-	std :: string 	_name;
-	int 			_hitPoints;
-	int				_energyPoints;
-	int 			_attackDamage;
-public :
-	ClapTrap();
-	ClapTrap(std :: string name);
-	ClapTrap(const ClapTrap &other);
-	~ClapTrap();
-	ClapTrap &operator=(const ClapTrap &other);
-
-	void attack(const std :: string &target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+    
 };
