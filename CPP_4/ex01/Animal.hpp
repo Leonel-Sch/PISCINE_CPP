@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 21:09:39 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/19 19:04:47 by lscheupl         ###   ########.fr       */
+/*   Created: 2025/09/18 21:10:12 by leonel            #+#    #+#             */
+/*   Updated: 2025/09/19 19:40:12 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,18 @@
 #include <string>
 #include <iomanip>
 #include <iostream>
-#include "Animal.hpp"
 
-class Dog : public Animal
+class Animal
 {
+protected :
+    std :: string _type;
 public :
-    Dog();
-    Dog(const Dog &other);
-    ~Dog();
-    Dog &operator=(const Dog &other);
+    Animal();
+    Animal(std :: string type);
+    Animal(const Animal &other);
+    Animal &operator=(const Animal &other);
     
-    void makeSound() const;
+    virtual ~Animal();
+    virtual void makeSound() const;
+    virtual const std :: string& getType() const;
 };

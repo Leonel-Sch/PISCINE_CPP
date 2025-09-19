@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 21:10:12 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/18 21:38:47 by leonel           ###   ########.fr       */
+/*   Updated: 2025/09/19 19:03:55 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#pragma once
+
+#include <string>
 #include <iomanip>
 #include <iostream>
 
@@ -21,8 +23,10 @@ protected :
 public :
     Animal();
     Animal(std :: string type);
-    Animal(Animal &other);
+    Animal(const Animal &other);
     Animal &operator=(const Animal &other);
-    ~Animal();
-    void makeSound();
+    
+    virtual ~Animal();
+    virtual void makeSound() const;
+    virtual const std :: string& getType() const;
 };

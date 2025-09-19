@@ -6,12 +6,13 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 21:09:39 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/19 19:04:47 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/09/19 20:12:41 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
+#include "Brain.hpp"
 #include <string>
 #include <iomanip>
 #include <iostream>
@@ -19,6 +20,8 @@
 
 class Dog : public Animal
 {
+private :
+    Brain* _brain;
 public :
     Dog();
     Dog(const Dog &other);
@@ -26,4 +29,5 @@ public :
     Dog &operator=(const Dog &other);
     
     void makeSound() const;
+    void	displayBrain(void) const;
 };
