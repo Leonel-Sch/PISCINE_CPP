@@ -6,11 +6,11 @@
 #    By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/12 15:13:16 by lscheupl          #+#    #+#              #
-#    Updated: 2025/09/12 15:14:22 by lscheupl         ###   ########.fr        #
+#    Updated: 2025/09/13 20:20:47 by lscheupl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= berkley
+NAME		= berkley_talking
 CXX		= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 SRCS		= main.cpp Fixed.cpp

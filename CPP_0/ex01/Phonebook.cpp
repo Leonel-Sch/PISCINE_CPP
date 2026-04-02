@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonel <leonel@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 16:07:32 by lscheupl          #+#    #+#             */
-/*   Updated: 2025/09/05 22:54:42 by leonel           ###   ########.fr       */
+/*   Updated: 2025/09/12 16:37:06 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,13 +65,13 @@ void    printContact(Contact book[8])
 {
     std :: string info;
     usleep(100000);
-    std :: cout << "|" << std::setw(10) << "index" << "|" << std :: flush;
+    std :: cout << "|" << std::setw(10) << "index" << "|";
     usleep(100000);
-    std :: cout << std::setw(10) << "First Name" << "|" << std :: flush;
+    std :: cout << std::setw(10) << "First Name" << "|";
     usleep(100000);
-    std :: cout << std::setw(10) << "Last Name" << "|" << std :: flush;
+    std :: cout << std::setw(10) << "Last Name" << "|";
     usleep(100000);
-    std :: cout << std::setw(10) << "Nickname" << "|\n" << std :: flush;
+    std :: cout << std::setw(10) << "Nickname" << "|\n";
     for(int i = 0; i < 8; i++)
     {
         if(book[i].getInfo(0).empty())
