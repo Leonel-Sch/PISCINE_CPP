@@ -6,7 +6,7 @@
 /*   By: lscheupl <lscheupl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 21:31:00 by leonel            #+#    #+#             */
-/*   Updated: 2025/09/19 19:02:08 by lscheupl         ###   ########.fr       */
+/*   Updated: 2025/09/19 20:41:19 by lscheupl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,6 @@ Animal& Animal::operator=(const Animal& other) {
 
 Animal :: ~Animal() {
     std :: cout << "Animal Class Destructor Called ! It was a " << _type << std :: endl;
-}
-
-void Animal :: makeSound() const {
-        std :: cout << "Animal ?\n";
 }
 
 const std :: string& Animal :: getType() const{

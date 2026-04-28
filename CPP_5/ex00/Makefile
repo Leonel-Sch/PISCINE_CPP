@@ -1,11 +1,11 @@
-SRC = main.cpp 
+SRC = main.cpp Bureaucrat.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = MutantStack
+NAME = bureaucrat
 
 all: $(NAME)
 
